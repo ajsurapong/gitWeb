@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +15,10 @@
         $(document).ready(function () {
             $("#txtUsername").focus();
 
-            $("#btnLogin").click(function () { 
+            $("#btnLogin").click(function () {
                 let username = $("#txtUsername").val();
                 let password = $("#txtPassword").val();
-                if(username == "user" && password == "1234") {
+                if (username == "user" && password == "1234") {
                     alert("OK");
                 }
                 else {
@@ -25,7 +26,7 @@
                 }
             });
 
-            $("#btnReset").click(function () { 
+            $("#btnReset").click(function () {
                 $("#txtUsername").val("");
                 $("#txtPassword").val("");
                 $("#txtUsername").focus();
@@ -35,6 +36,14 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link active" href="#">Login </a>
+            <a class="nav-item nav-link" href="about.html">About </a>
+        </div>
+    </nav>
+
     <div class="container">
         <input type="text" id="txtUsername" class="form-control my-2" placeholder="Username">
         <input type="password" id="txtPassword" class="form-control mb-2" placeholder="Password">
@@ -42,4 +51,5 @@
         <button id="btnReset" class="btn btn-secondary">Reset</button>
     </div>
 </body>
+
 </html>
